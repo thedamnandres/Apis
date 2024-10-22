@@ -4,10 +4,12 @@ namespace Apis.Repositories
 {
     public class RestauranteRepository
     {
-        public List<Restaurante>  DevuelveRestaurantes() { 
+        public List<Restaurante>  DevuelveRestaurantes() 
+        { 
 
             List<Restaurante> restaurantes = new List<Restaurante>();
-            Restaurante restaurante = new Restaurante
+
+            Restaurante restaurant = new Restaurante
             {
                 Id = 1,
                 Nombre = "McDonalds",
@@ -16,6 +18,7 @@ namespace Apis.Repositories
                 PetFriendly = false
 
             };
+
             Restaurante restaurante2 = new Restaurante
             {
                 Id = 2,
@@ -25,8 +28,8 @@ namespace Apis.Repositories
                 PetFriendly = true
 
             };
-            restaurante.Equals(restaurante);
-            restaurante.Equals(restaurante2);
+            restaurantes.Add(restaurant);
+            restaurantes.Add(restaurante2);
             return restaurantes;
         
         
